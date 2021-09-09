@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #0093E9;
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.head-title{
+    margin-top: 5px;
+    text-align: center;
+    font-size: 35px;
+    font-family: cursive;
+    color: aliceblue;
+}
+
+.container{
+    height: 87vh;
+    width: 55vw;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    margin:0 25vw 5vh 25vw;
+    border-radius: 30px 10px 30px 10px;
+}
+
+::placeholder{
+    color: black;
+}
+
+.row1{
+    padding-top: 10px;
+}
+
+.desc-label,.dead-label,.cate-label{
+    padding-left: 40px;
+    font-family: cursive;
+    font-size: 20px;
+}
+
+.cate-select,.date-inp,.task:focus{
+    outline: none;
+    border: none;
+}
+
+.row1 input{
+    margin-left: 2.5vw;
+    width: 50vw;
+    border: 0;
+    background-color: rgba(0,0,0,0.1);
+    height: 5vh;
+    border-radius: 10px;
+    font-size: 15px;
+    padding-left: 5px;
+}
+
+.row2{
+    display: flex;
+    padding-top: 3px;
+}
+
+.row2 select, input{
+    margin-top: 3px;
+    margin-left: 2.5vw;
+    width: 22.5vw;
+    border: 0;
+    background-color: rgba(0,0,0,0.1);
+    height: 5vh;
+    border-radius: 10px;
+}
+.row1 input:hover,.row2 select:hover,.row2 input:hover{
+    background-color: rgba(0,0,0,0.4);
+}
+
+.row3 button{
+    margin-top: 10px;
+    margin-left: 16vw;
+    width: 20vw;
+    border: 0;
+    background-color: rgba(250, 2, 2, 0.3);
+    height: 5vh;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: cursive;
+}
+
+.row3 button:hover{
+    background-color: rgba(250, 2, 2, 0.5);
+}
+
+.todos{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    font-family: cursive;
+}
+.row00{
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 10px 20px 10px 20px;
+}
+.row10{
+    padding-left: 10px;
+    padding-top: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    font-size: 15px;
+
+}
+
+.row20{
+    padding-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 13px;
+}
+
+.delete-btn a{
+    text-decoration: none;
+    color: black;
+}
+
+.list-task{
+    padding: 5px;
+    background-color: #fc9c9c;
+    border-radius: 5px 10px 5px 10px;
+}
+
+.delete-btn{
+    padding: 5px;
+    background-color: #f76666;
+    border-radius: 5px 10px 5px 10px;
+}
+.list-cate{
+    padding: 5px;
+    background-color:  #f76666;
+    border-radius: 10px;
+    border-radius: 5px 10px 5px 10px;
+}
+.list-deadline{
+    padding: 5px;
+    background-color: #f76666;
+    border-radius: 10px;
+    border-radius: 5px 10px 5px 10px;
+}

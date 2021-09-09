@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="/css/home.css" type="text/css">
+    <script src="https://kit.fontawesome.com/e9cb9b0869.js" crossorigin="anonymous"></script>
+</head>
+<body>
+        <h1 class="head-title"> <i class="fas fa-tasks"></i> TODO-TASK</h1>
+        <div class="container">
+                
+                    <form action="/create-task" method="POST">
+                    <div class="row1">
+                    <label class="desc-label">Description</label>  
+                    <input class="task" name="task" type="text" placeholder="What do you want to do?">
+                    </div>
+                   <div class="row2">
+                    <div class="category">
+                        <label class="cate-label">Category</label>  
+                        <select name="category" class="cate-select"> 
+                        <option> Miscellaneous
+                        </option> 
+                        <option value = "Work"> Work  
+                        </option>  
+                        <option value = "Home"> Home
+                        </option>  
+                        <option value = "Personal"> Personal 
+                        </option>   
+                        </select>  
+                    </div>
+                    <div class="date">
+                        <label class="dead-label">Deadline</label>
+                        <input name="deadline" class="date-inp" type="date">
+
+                    </div>
+                </div>
+                <div class="row3" >
+                    <button type="submit">Add Task</button>
+                </div>
+                </form>
+
+                <div class="todos">
+                        <% for(let i of todo_list){ %>
+                            <div class="row00">
+                                <div class="row10">
+                                    <div class="list-task"><p>Task: <%= i.task %></p></div>
+                                </div>
+                                <div class="row20">
+                                    <div class="delete-btn"> <a href="/delete-task/?id=<%= i._id %>">Delete Task <i class="fas fa-trash"></i></a></div>
+                                    <div class="list-cate"><p>Category: <%= i.category %></p></div>
+                                    <div class="list-deadline"><p>Deadline: <%= i.deadline %></p></div>
+                                </div>
+                            </div>     
+            
+                            <% } %>
+                </div>
+
+        </div>
+
+
+      
+    <script src="/js/index.js" type="text/javascript"></script>
+</body>
+</html>
